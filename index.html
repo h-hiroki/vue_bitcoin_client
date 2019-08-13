@@ -12,11 +12,16 @@
       Error.
     </section>
     <section v-else>
-      <ul v-cloak>
-        <li v-for="(value, key) in bpi">
-          {{ key }} : {{ value.rate_float | currencyDecimal }}
-        </li>
-      </ul>
+      <div v-if="loading">
+        Loading...
+      </div>
+      <div v-else>
+        <ul v-cloak>
+          <li v-for="(value, key) in bpi">
+            {{ key }} : {{ value.rate_float | currencyDecimal }}
+          </li>
+        </ul>
+      </div>
     </section>
   </div>
 

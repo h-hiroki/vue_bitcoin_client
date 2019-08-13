@@ -11,5 +11,10 @@ new Vue({
     .catch(function(error) {
       console.log(error)
     })
+  },
+  filters: {
+    currencyDecimal(value) {
+      return value.toFixed(2)
+    }
   }
 })

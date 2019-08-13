@@ -10,7 +10,7 @@
     <h2>Bitcoin Price</h2>
     <ul>
       <li v-for="(value, key) in bpi">
-        {{ key }} : {{ value.rate_float }}
+        {{ key }} : {{ value.rate_float | currencyDecimal }}
       </li>
     </ul>
   </div>

@@ -8,7 +8,7 @@
 <body>
   <div id="app">
     <h2>Bitcoin Price</h2>
-    <ul>
+    <ul v-cloak>
       <li v-for="(value, key) in bpi">
         {{ key }} : {{ value.rate_float | currencyDecimal }}
       </li>

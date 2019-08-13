@@ -7,7 +7,12 @@
 </head>
 <body>
   <div id="app">
-    
+    <h2>Bitcoin Price</h2>
+    <ul>
+      <li v-for="(value, key) in bpi">
+        {{ key }} : {{ value.rate_float }}
+      </li>
+    </ul>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
